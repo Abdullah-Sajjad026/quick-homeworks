@@ -9,28 +9,28 @@ export default function Home() {
   const data = {
     engineering: {
       subjects: [
-        "Engineering",
-        "Engineering",
-        "Engineering",
-        "Engineering",
-        "Engineering",
-        "Engineering",
-        "Engineering",
-        "Engineering",
+        "Electrical Engineering",
+        "Mechanical Engineering",
+        "Civil Engineering",
+        "Electronic Engineering",
+        "Chemical Engineering",
+        "Electronic Engineering",
+        "Computer Engineering",
+        "Biomedical Engineering",
+        "Data Analysis",
       ],
       from: "indigo-200",
       via: "purple-200",
       to: "pink-200",
     },
-    medical: {
+    nonEngineering: {
       subjects: [
-        "Medical",
-        "Medical",
-        "Medical",
-        "Medical",
-        "Medical",
-        "Medical",
-        "Medical",
+        "History & Arts",
+        "Writing Courses",
+        "Math",
+        "Calculus 1,2,3",
+        "Physics",
+        "Chemistry",
       ],
       from: "white",
       via: "",
@@ -61,7 +61,7 @@ export default function Home() {
       <section className="subjects subjects-engineering">
         <div className="container">
           <article>
-            <h3 className="text-2xl font-semibold mb-6">Engineering</h3>
+            <h3 className="text-3xl font-semibold mb-6">Engineering</h3>
             <div className="grid xs:grid-cols-2 md:grid-cols-3 gap-8">
               <SubjectsModule data={data.engineering} />
             </div>
@@ -71,9 +71,9 @@ export default function Home() {
       <section className="subjects subjects-medical bg-[#fafafa]">
         <div className="container">
           <article>
-            <h3 className="text-3xl font-semibold mb-6">Medical</h3>
+            <h3 className="text-3xl font-semibold mb-6">Non Engineering</h3>
             <div className="grid xs:grid-cols-2 md:grid-cols-3 gap-8 ">
-              <SubjectsModule data={data.medical} />
+              <SubjectsModule data={data.nonEngineering} />
             </div>
           </article>
         </div>

@@ -15,13 +15,13 @@ const SubjectsModule = ({data}) => {
       {data.subjects.map((sub, index) => (
         <div
           className={`p-4 rounded-lg shadow hover:shadow-lg 
-          hover:shadow-blue-100 duration-200 ease-in 
-          cursor-pointer bg-gradient-to-r
-            ${data.from && `from-${data.from}`} 
-            ${data.via && `via-${data.via}`} 
-            ${data.to && `to-${data.to}`} 
-            ${data.bgColor && `bg-${data.bgColor}`} `}
+          hover:shadow-blue-100 duration-200 ease-in bg-gradient-to-r ${
+            data.from && `from-${data.from}`
+          } ${data.via && `via-${data.via}`} ${data.to && `to-${data.to}`} ${
+            data.bgColor && `bg-${data.bgColor}`
+          } `}
           key={index}
+          style={{cursor: "pointer"}}
           onClick={() => handleClick(sub)}
         >
           {sub}

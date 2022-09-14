@@ -10,10 +10,8 @@ const BuyModal = ({open, toggle, subject}) => {
       <ModalBody>
         <div className="border-b-2 border-indigo-100 py-3 mb-3">
           <p className="text-base">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit ipsam assumenda voluptatibus fugit eum quidem nihil
-            aut ab ipsa ut libero aperiam, quibusdam porro veritatis magni!
-            Error tempora sint molestias.
+            We will provide many services including Assignments, Quizzes, Exams
+            and Projects.
           </p>
         </div>
         <div className="grid-cols-2 place-items-center ">
